@@ -39,6 +39,13 @@ const Header = ({ currentUser,hidden }) =>(
 //     currentUser:state.user.currentUser
 // })
 
+
+/** import {createStructuredSelector} from 'reselect'  & import respective selectors as well*/
+// const mapStateToProps = createStructuredSelector({
+//     currentUser:selectCurrentUser,
+//     hidden:selectCartHidden
+// })
+
 const mapStateToProps =({user:{currentUser},cart:{hidden}})=>(
     {
     currentUser,
